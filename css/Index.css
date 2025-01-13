@@ -41,7 +41,7 @@ html {
   align-items: center;
 }
 
-.nav-item {
+.navbar-collapse {
   grid-column-start: 8;
   grid-column-end: span 5;
 }
