@@ -27,8 +27,76 @@ html {
   column-gap: 1rem;
 }
 
-.container-fluid {
+.nav-item {
   grid-column-start: 8;
   grid-column-end: span 5;
 }
 
+.container-fluid .navbar-brand {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+}
+
+/* footer grid */
+.footer {
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 4.5625rem;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  column-gap: 1rem;
+  grid-template-rows: 2fr;
+}
+
+.footer-logo {
+  grid-column: 1 / 4;
+}
+
+.footer-nav-block {
+  grid-column: 4 / 6;
+}
+
+.footer-nav-block-extra {
+  grid-column: 6 / 9;
+}
+
+.footer-nav-newsletter {
+  grid-column: 9 / 11;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-nav-newsletter label {}
+
+.footer-nav-newsletter input {
+  width: 100%;
+}
+
+.footer-nav-newsletter img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-nav-socials {
+  grid-column: 11 / 12;
+  display: flex;
+  flex-direction: column;
+  justify-self: end;
+  gap: 2.75rem;
+}
+
+.footer-nav-socials img {
+  width: 40px;
+  height: auto;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-nav-item1,
+.footer-nav-item2 {
+  list-style-type: none;
+}
