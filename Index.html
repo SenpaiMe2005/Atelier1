@@ -39,40 +39,43 @@
     </div>
   </nav>
 
-  <footer class="footer">
-    <div class="footer-logo">
-      <img src="/images/LogoLarge.png" alt="footer-logo">
-    </div>
-    <div class="footer-nav-block">
-      <ul class="footer-nav">
-        <li class="footer-nav-item"><a href="">Home</a></li>
-        <li class="footer-nav-item"><a href="">Over ons</a></li>
-        <li class="footer-nav-item"><a href="">Vakantie</a></li>
-        <li class="footer-nav-item"><a href="">Inspiratie</a></li>
-        <li class="footer-nav-item"><a href="">Contact</a></li>
-      </ul>
-    </div>
-    <div class="footer-nav-block-extra">
-      <ul class="footer-nav">
-        <li class="footer-nav-item"><a href="">FAQ</a></li>
-        <li class="footer-nav-item"><a href="">Algemene voorwaarden</a></li>
-        <li class="footer-nav-item"><a href="">Privacy Policy</a></li>
-      </ul>
-    </div>
-    <div class="footer-nav-newsletter">
-      <form action="#">
-        <label for="email">Abonneer op de nieuwsbrief</label>
-        <input type="email" name="email" id="email" placeholder="Voer je e-mailadres in">
-        <img src="svg/Union.svg" alt="Submit">
-      </form>
-    </div>
-    <div class="footer-nav-socials">
-      <a href="#"><img src="svg/instagram.svg" alt="Instagram"></a>
-      <a href="#"><img src="svg/facebook.svg" alt="Facebook"></a>
-      <a href="#"><img src="svg/tiktok.svg" alt="TikTok"></a>
-    </div>
-  </footer>
-
+  <div class="container-footer">
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="/images/LogoLarge.png" alt="Bedrijfslogo">
+        </div>
+        <nav class="footer-nav-block">
+          <ul class="footer-nav">
+            <li class="footer-nav-item"><a href="#">Home</a></li>
+            <li class="footer-nav-item"><a href="#">Over ons</a></li>
+            <li class="footer-nav-item"><a href="#">Vakantie</a></li>
+            <li class="footer-nav-item"><a href="#">Inspiratie</a></li>
+            <li class="footer-nav-item"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-nav-block-extra">
+          <ul class="footer-nav">
+            <li class="footer-nav-item"><a href="#">FAQ</a></li>
+            <li class="footer-nav-item"><a href="#">Algemene voorwaarden</a></li>
+            <li class="footer-nav-item"><a href="#">Privacy Policy</a></li>
+          </ul>
+        </nav>
+        <div class="footer-nav-newsletter">
+          <form action="#" method="POST">
+            <label for="email">Abonneer op de nieuwsbrief</label>
+            <input type="email" name="email" id="email" placeholder="Voer je e-mailadres in" required>
+            <a href=""><img src="svg/Union.svg" alt="Verstuur"></a>
+          </form>
+        </div>
+        <div class="footer-nav-socials">
+          <a href="#" aria-label="Instagram"><img src="svg/instagram.svg" alt="Instagram"></a>
+          <a href="#" aria-label="Facebook"><img src="svg/facebook.svg" alt="Facebook"></a>
+          <a href="#" aria-label="TikTok"><img src="svg/tiktok.svg" alt="TikTok"></a>
+        </div>
+      </div>
+    </footer>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
