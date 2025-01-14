@@ -69,7 +69,7 @@ html {
 }
 
 /* Gebruik van het lettertype */
-h1 {
+.title {
   font-family: "Exo2", sans-serif;
   font-size: var(--font-size-xl);
   color: var(--font-color2);
@@ -92,6 +92,16 @@ p {
   font-size: var(--font-size-s);
   color: var(--font-color2);
   margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.title_card {
+  font-family: "Exo2", sans-serif;
+  font-size: var(--font-size-l);
+  color: var(--font-color1);
+  margin-bottom: 1rem;
+
+  /* 'Exo2' gebruiken met fallback */
 }
 
 
@@ -100,10 +110,18 @@ p {
   background-repeat: no-repeat;
   width: 100%;
   padding: 2rem 0; /* 2rem is 32px, equivalent to 2 * 16px */
+  margin-bottom: 6.25rem;
 }
 
 .overons-container {
   background-image: url(/images/overonsheroimg.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 2rem 0; /* 2rem is 32px, equivalent to 2 * 16px */
+}
+
+.bestemming-container {
+    background-image: url(/images/bestemmingenheroimg.png);
   background-repeat: no-repeat;
   width: 100%;
   padding: 2rem 0; /* 2rem is 32px, equivalent to 2 * 16px */
@@ -162,5 +180,9 @@ p {
 }
 
 .nav-link:hover {
+  color: var(--tui-red-color);
+}
+
+.active1 {
   color: var(--tui-red-color);
 }
