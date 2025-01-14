@@ -13,6 +13,11 @@
   --font-size: 1rem;
 }
 
+@font-face {
+  font-family: ;
+  src: url();
+}
+
 html {
   box-sizing: border-box;
   font-size: 16px; /* Standard font size (1rem = 16px) */
@@ -55,7 +60,7 @@ html {
 /* Algemene instellingen */
 html {
   box-sizing: border-box; /* Zorgt ervoor dat padding en borders binnen de breedte vallen */
-  font-size: 16px; /* 1rem = 16px */
+  font-size: 1rem; /* 1rem = 16px */
 }
 
 *, *:before, *:after {
