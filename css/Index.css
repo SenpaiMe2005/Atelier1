@@ -94,8 +94,17 @@ p {
   margin-bottom: 1rem;
 }
 
+
 .hero-container {
   background-image: url(/images/heroimg.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 2rem 0; /* 2rem is 32px, equivalent to 2 * 16px */
+}
+
+.overons-container {
+  background-image: url(/images/overonsheroimg.png);
+  background-repeat: no-repeat;
   width: 100%;
   padding: 2rem 0; /* 2rem is 32px, equivalent to 2 * 16px */
 }
@@ -107,24 +116,51 @@ p {
   padding-left: 0;
 }
 
-.hero.intro-container {
+.intro-container {
   margin-top: 8.75rem; /* 140px omgezet naar rem, 1rem = 16px */
 }
 
-.hero.hero-buttons {
+.hero-buttons-primary {
   display: inline-block;
   padding: 0.625rem 1.25rem; /* 10px boven/onder en 20px links/rechts */
   margin: 0.625rem 0; /* 10px marge boven en onder de knop */
-  background-color: #007bff; /* Knop kleur */
+  background-color: var(--tui-red-color); /* Knop kleur */
   color: white; /* Witte tekst */
   text-align: center;
   text-decoration: none; /* Verwijder de onderlijning */
-  border-radius: 0.375rem; /* Ronde hoeken */
-  font-size: 1rem; /* Tekstgrootte */
+  border-radius: 0.3rem; /* Ronde hoeken */
+  font-size: var(--font-size-s); /* Tekstgrootte */
   transition: background-color 0.3s ease; /* Hover-effect */
-
+    font-family: "Comfortaa", sans-serif;
 }
 
-.hero.hero-buttons:hover {
-  background-color: #0056b3; /* Donkerder blauwe kleur bij hover */
+.hero.hero-buttons-primary:hover {
+  background-color: var(--tui-accent-red-color); /* Donkerder blauwe kleur bij hover */
+}
+
+.hero-buttons-secondary {
+  display: inline-block;
+  padding: 0.625rem 1.25rem; /* 10px boven/onder en 20px links/rechts */
+  margin: 0.625rem 0; /* 10px marge boven en onder de knop */
+  border: 2px solid var(--tui-primary-color); /* Knop kleur */
+  color: white; /* Witte tekst */
+  text-align: center;
+  text-decoration: none; /* Verwijder de onderlijning */
+  border-radius: 0.3rem; /* Ronde hoeken */
+  font-size: var(--font-size-s); /* Tekstgrootte */
+  transition: background-color 0.3s ease; /* Hover-effect */
+  font-family: "Comfortaa", sans-serif;
+}
+
+.hero-buttons-secondary:hover {
+  background-color: var(--tui-primary-color); /* Donkerder blauwe kleur bij hover */
+}
+
+.nav-link {
+  color: var(--font-color2);
+  font-family: "Jura", sans-serif;
+}
+
+.nav-link:hover {
+  color: var(--tui-red-color);
 }

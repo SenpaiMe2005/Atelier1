@@ -14,73 +14,62 @@
 
 
 <body>
-    <div class="hero hero-container">
+    <div class="overons overons-container">
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="./images/LogoSmall.png" alt="TUI" class="image"></a>
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="/index.html">
+                    <img src="/images/logosmall.png" alt="Logo" class="img-fluid">
+                </a>
+
+                <!-- Hamburger Toggle Button -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-            </div>
-        
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Over ons</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Bestemmingen</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Inspiratie</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Contact</a>
-                    </li>
-                </ul>
+
+                <!-- Navigation Links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="overons.html">Over ons</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bestemmingenoverwiev.html">Bestemmingen</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="inspiratie.html">Inspiratie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-    </div>
-    <div class="container-footer">
-        <footer class="footer">
-            <div class="footer-container">
-                <div class="footer-logo">
-                    <img src="/images/LogoLarge.png" alt="Bedrijfslogo">
-                </div>
-                <nav class="footer-nav-block">
-                    <ul class="footer-nav">
-                        <li class="footer-nav-item"><a href="#">Home</a></li>
-                        <li class="footer-nav-item"><a href="#">Over ons</a></li>
-                        <li class="footer-nav-item"><a href="#">Vakantie</a></li>
-                        <li class="footer-nav-item"><a href="#">Inspiratie</a></li>
-                        <li class="footer-nav-item"><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-                <nav class="footer-nav-block-extra">
-                    <ul class="footer-nav">
-                        <li class="footer-nav-item"><a href="#">FAQ</a></li>
-                        <li class="footer-nav-item"><a href="#">Algemene voorwaarden</a></li>
-                        <li class="footer-nav-item"><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </nav>
-                <div class="footer-nav-newsletter">
-                    <form action="#" method="POST">
-                        <label for="email">Abonneer op de nieuwsbrief</label>
-                        <input type="email" name="email" id="email" placeholder="Voer je e-mailadres in" required>
-                        <a href=""><img src="svg/Union.svg" alt="Verstuur"></a>
-                    </form>
-                </div>
-                <div class="footer-nav-socials">
-                    <a href="#" aria-label="Instagram"><img src="svg/instagram.svg" alt="Instagram"></a>
-                    <a href="#" aria-label="Facebook"><img src="svg/facebook.svg" alt="Facebook"></a>
-                    <a href="#" aria-label="TikTok"><img src="svg/tiktok.svg" alt="TikTok"></a>
+
+        <div class="hero intro intro-container">
+            <div class="container">
+                <div class="row">
+                    <!-- Tekst kolom -->
+                    <div class="col-lg-5 col-md-12">
+                        <h1 class="hero intro intro-title">Over ons</h1>
+                        <p class="hero intro intro-paragraph">Bij TUI geloven we dat reizen meer is dan alleen een
+                            bestemming. Het is het avontuur, de ervaringen en de herinneringen
+                            die je maakt. Met onze passie voor reizen en expertise helpen we je de wereld te ontdekken,
+                            precies zoals jij het wilt.
+                            Kies voor TUI en ervaar hoe wij jouw droomreis werkelijkheid maken.</p>
+                    </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </div>
+
+    <div>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
