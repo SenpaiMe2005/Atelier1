@@ -10,17 +10,52 @@
   --font-color1: #000000;
   --font-color2: #ffffff;
 
-  --font-size: 1rem;
+  --font-size-xl: 4rem;
+  --font-size-l: 3rem;
+  --font-size-m: 2rem;
+  --font-size-s: 1.125rem;
+
 }
 
 @font-face {
-  font-family: ;
-  src: url();
+  font-family: "Exo2";
+  /* Font-naam */
+  src: url("/fonts/Exo2-VariableFont_wght.ttf") format("truetype");
+  /* Bestandslocatie en format */
+  font-weight: normal;
+  /* Optioneel: gewicht specificeren */
+  font-style: normal;
+  /* Optioneel: stijl specificeren */
 }
+
+@font-face {
+  font-family: "Comfortaa";
+  /* Font-naam */
+  src: url("/fonts/Comfortaa-VariableFont_wght.ttf") format("truetype");
+  /* Bestandslocatie en format */
+  font-weight: normal;
+  /* Optioneel: gewicht specificeren */
+  font-style: normal;
+  /* Optioneel: stijl specificeren */
+}
+
+@font-face {
+  font-family: "Jura";
+  /* Font-naam */
+  src: url("/fonts/Jura-VariableFont_wght.ttf") format("truetype");
+  /* Bestandslocatie en format */
+  font-weight: normal;
+  /* Optioneel: gewicht specificeren */
+  font-style: normal;
+  /* Optioneel: stijl specificeren */
+}
+
+
 
 html {
   box-sizing: border-box;
-  font-size: 16px; /* Standard font size (1rem = 16px) */
+  font-size: 16px;
+  /* Standard font size (1rem = 16px) */
 }
 
 *,
@@ -34,6 +69,22 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+/* Gebruik van het lettertype */
+h1 {
+  font-family: "Exo2", sans-serif;
+  /* 'Exo2' gebruiken met fallback */
+}
+
+h2 {
+  font-family: "Exo2", sans-serif;
+  /* 'Exo2' gebruiken met fallback */
+}
+
+h3 {
+  font-family: "Exo2", sans-serif;
+  /* 'Exo2' gebruiken met fallback */
 }
 
 .navbar {
@@ -59,117 +110,173 @@ html {
 /* Footer Grid */
 /* Algemene instellingen */
 html {
-  box-sizing: border-box; /* Zorgt ervoor dat padding en borders binnen de breedte vallen */
-  font-size: 1rem; /* 1rem = 16px */
+  box-sizing: border-box;
+  /* Zorgt ervoor dat padding en borders binnen de breedte vallen */
+  font-size: 1rem;
+  /* 1rem = 16px */
 }
 
-*, *:before, *:after {
-  box-sizing: inherit; /* Overneemt de box-sizing van html */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  /* Overneemt de box-sizing van html */
 }
 
 body {
-  margin: 0; /* Verwijdert standaard marges van de body */
-  padding: 0; /* Verwijdert standaard padding van de body */
-  font-family: Arial, sans-serif; /* Algemene lettertype-instelling */
+  margin: 0;
+  /* Verwijdert standaard marges van de body */
+  padding: 0;
+  /* Verwijdert standaard padding van de body */
+  font-family: Arial, sans-serif;
+  /* Algemene lettertype-instelling */
 }
 
 /* FOOTER BASISOPMAAK */
 .footer {
-  background-color: var(--tui-primary-color); /* Achtergrondkleur van de footer, dynamisch via een variabele */
-  width: 100%; /* Zorgt ervoor dat de footer de volledige breedte beslaat */
-  padding: 2rem 0; /* Boven- en ondermarge van 2rem, geen marge aan de zijkanten */
+  background-color: var(--tui-primary-color);
+  /* Achtergrondkleur van de footer, dynamisch via een variabele */
+  width: 100%;
+  /* Zorgt ervoor dat de footer de volledige breedte beslaat */
+  padding: 2rem 0;
+  /* Boven- en ondermarge van 2rem, geen marge aan de zijkanten */
 }
 
 .footer-container {
-  width: 100%; /* De container vult de hele breedte */
-  max-width: 75rem; /* Maximale breedte van de footer-content */
-  margin: 0 auto; /* Centreert de container horizontaal */
-  display: grid; /* Gebruikt CSS Grid voor layout */
-  grid-template-columns: repeat(12, 1fr); /* Maakt een 12-koloms grid */
-  column-gap: 1rem; /* Ruimte van 1rem tussen de kolommen */
+  width: 100%;
+  /* De container vult de hele breedte */
+  max-width: 75rem;
+  /* Maximale breedte van de footer-content */
+  margin: 0 auto;
+  /* Centreert de container horizontaal */
+  display: grid;
+  /* Gebruikt CSS Grid voor layout */
+  grid-template-columns: repeat(12, 1fr);
+  /* Maakt een 12-koloms grid */
+  column-gap: 1rem;
+  /* Ruimte van 1rem tussen de kolommen */
 }
 
 /* LOGO-INSTELLINGEN */
 .footer-logo {
-  grid-column: 1 / 4; /* Logo beslaat kolom 1 tot 3 */
-  display: flex; /* Flexbox voor betere uitlijning */
-  align-items: center; /* Verticaal uitlijnen van de logo-content */
+  grid-column: 1 / 4;
+  /* Logo beslaat kolom 1 tot 3 */
+  display: flex;
+  /* Flexbox voor betere uitlijning */
+  align-items: center;
+  /* Verticaal uitlijnen van de logo-content */
 }
 
 .footer-logo img {
-  max-width: 100%; /* Logo schaalt proportioneel tot de breedte van de container */
-  height: auto; /* Hoogte wordt automatisch aangepast */
+  max-width: 100%;
+  /* Logo schaalt proportioneel tot de breedte van de container */
+  height: auto;
+  /* Hoogte wordt automatisch aangepast */
 }
 
 /* NAVIGATIE LINKS */
 .footer-nav-block {
-  grid-column: 4 / 6; /* Navigatieblok beslaat kolom 4 tot 5 */
+  grid-column: 4 / 6;
+  /* Navigatieblok beslaat kolom 4 tot 5 */
 }
 
 .footer-nav-block-extra {
-  grid-column: 6 / 9; /* Extra navigatieblok beslaat kolom 6 tot 8 */
+  grid-column: 6 / 9;
+  /* Extra navigatieblok beslaat kolom 6 tot 8 */
 }
 
 .footer-nav {
-  list-style: none; /* Verwijdert standaard opsommingstekens van de lijst */
-  margin: 0; /* Geen buitenruimte rond de lijst */
-  padding: 0; /* Geen binnenruimte binnen de lijst */
-  display: flex; /* Maakt een flexbox-container */
-  flex-direction: column; /* Elementen worden verticaal gestapeld */
-  gap: 0.5rem; /* Ruimte van 0.5rem tussen de items */
+  list-style: none;
+  /* Verwijdert standaard opsommingstekens van de lijst */
+  margin: 0;
+  /* Geen buitenruimte rond de lijst */
+  padding: 0;
+  /* Geen binnenruimte binnen de lijst */
+  display: flex;
+  /* Maakt een flexbox-container */
+  flex-direction: column;
+  /* Elementen worden verticaal gestapeld */
+  gap: 0.5rem;
+  /* Ruimte van 0.5rem tussen de items */
 }
 
 .footer-nav-item a {
-  text-decoration: none; /* Verwijdert standaard onderstreping van links */
-  color: #000; /* Tekstkleur zwart */
-  font-size: 0.875rem; /* Tekstgrootte iets kleiner dan standaard */
-  transition: color 0.3s; /* Maakt kleurverandering soepel */
+  text-decoration: none;
+  /* Verwijdert standaard onderstreping van links */
+  color: #000;
+  /* Tekstkleur zwart */
+  font-size: 0.875rem;
+  /* Tekstgrootte iets kleiner dan standaard */
+  transition: color 0.3s;
+  /* Maakt kleurverandering soepel */
 }
 
 .footer-nav-item a:hover {
-  color: #f00; /* Kleur verandert naar rood bij hover */
+  color: #f00;
+  /* Kleur verandert naar rood bij hover */
 }
 
 /* NIEUWSBRIEFSECTIE */
 .footer-nav-newsletter {
-  grid-column: 9 / 11; /* Nieuwsbriefblok beslaat kolom 9 tot 10 */
-  display: flex; /* Flexbox voor uitlijning */
-  flex-direction: column; /* Items worden verticaal gestapeld */
-  gap: 0.75rem; /* Ruimte van 0.75rem tussen de items */
+  grid-column: 9 / 11;
+  /* Nieuwsbriefblok beslaat kolom 9 tot 10 */
+  display: flex;
+  /* Flexbox voor uitlijning */
+  flex-direction: column;
+  /* Items worden verticaal gestapeld */
+  gap: 0.75rem;
+  /* Ruimte van 0.75rem tussen de items */
 }
 
 .footer-nav-newsletter label {
-  font-size: 1rem; /* Labeltekst in standaardgrootte */
+  font-size: 1rem;
+  /* Labeltekst in standaardgrootte */
 }
 
 .footer-nav-newsletter input {
-  width: 100%; /* Inputveld beslaat de volledige breedte */
-  padding: 0.5rem; /* Binnenruimte van 0.5rem */
-  border: 1px solid #ccc; /* Lichte grijze rand */
-  border-radius: 0.25rem; /* Ronde hoeken voor de input */
+  width: 100%;
+  /* Inputveld beslaat de volledige breedte */
+  padding: 0.5rem;
+  /* Binnenruimte van 0.5rem */
+  border: 1px solid #ccc;
+  /* Lichte grijze rand */
+  border-radius: 0.25rem;
+  /* Ronde hoeken voor de input */
 }
 
 .newsletter-submit {
-  background: none; /* Geen achtergrond */
-  border: none; /* Geen rand */
-  cursor: pointer; /* Pointer-cursor bij hover */
+  background: none;
+  /* Geen achtergrond */
+  border: none;
+  /* Geen rand */
+  cursor: pointer;
+  /* Pointer-cursor bij hover */
 }
 
 .newsletter-submit img {
-  max-width: 100%; /* Afbeelding schaalt proportioneel */
-  height: auto; /* Hoogte wordt automatisch aangepast */
+  max-width: 100%;
+  /* Afbeelding schaalt proportioneel */
+  height: auto;
+  /* Hoogte wordt automatisch aangepast */
 }
 
 /* SOCIALE MEDIA LINKS */
 .footer-nav-socials {
-  grid-column: 11 / 13; /* Sociale media blok beslaat kolom 11 tot 12 */
-  display: flex; /* Flexbox voor uitlijning */
-  flex-direction: column; /* Items worden verticaal gestapeld */
-  gap: 1rem; /* Ruimte van 1rem tussen de items */
-  align-items: flex-end; /* Rechts uitlijnen van de items */
+  grid-column: 11 / 13;
+  /* Sociale media blok beslaat kolom 11 tot 12 */
+  display: flex;
+  /* Flexbox voor uitlijning */
+  flex-direction: column;
+  /* Items worden verticaal gestapeld */
+  gap: 1rem;
+  /* Ruimte van 1rem tussen de items */
+  align-items: flex-end;
+  /* Rechts uitlijnen van de items */
 }
 
 .footer-nav-socials img {
-  width: 1.5625rem; /* Breedte van 25px, schaalbaar met rem */
-  height: 1.75rem; /* Hoogte van 28px, schaalbaar met rem */
+  width: 1.5625rem;
+  /* Breedte van 25px, schaalbaar met rem */
+  height: 1.75rem;
+  /* Hoogte van 28px, schaalbaar met rem */
 }
