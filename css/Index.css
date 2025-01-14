@@ -77,20 +77,38 @@ html {
   /* 'Exo2' gebruiken met fallback */
 }
 
-h2 {
+.title2-1 {
   font-family: "Exo2", sans-serif;
-  /* 'Exo2' gebruiken met fallback */
+  font-size: var(--font-size-l);
+  color: var(--font-color2);
+    margin-bottom: 1rem;
+}
+
+.title2-2 {
+  font-family: "Exo2", sans-serif;
+  font-size: var(--font-size-l);
+  color: var(--font-color1);
+    margin-bottom: 1rem;
 }
 
 h3 {
   font-family: "Exo2", sans-serif;
-  /* 'Exo2' gebruiken met fallback */
+  font-size: var(--font-size-m);
+  color: var(--font-color1);
 }
 
-p {
+.text1 {
   font-family: "Comfortaa", sans-serif;
   font-size: var(--font-size-s);
   color: var(--font-color2);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.text2 {
+  font-family: "Comfortaa", sans-serif;
+  font-size: var(--font-size-s);
+  color: var(--font-color1);
   margin-bottom: 1rem;
   line-height: 1.5;
 }
@@ -103,6 +121,13 @@ p {
 
   /* 'Exo2' gebruiken met fallback */
 }
+
+.card-title {
+    font-size: var(--font-size-m);
+  color: var(--font-color1);
+  margin-bottom: 1rem;
+}
+
 
 
 .hero-container {
@@ -185,4 +210,44 @@ p {
 
 .active1 {
   color: var(--tui-red-color);
+}
+
+.active2 {
+    background-color: var(--tui-accent-red-color);
+}
+
+.card {
+   border: 0.2rem solid var(--tui-darkblue-color);
+   border-radius: 0.65rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.625rem 1.25rem; /* 10px boven/onder en 20px links/rechts */
+  margin: 0.625rem 0; /* 10px marge boven en onder de knop */
+  background-color: var(--tui-red-color); /* Knop kleur */
+  color: white; /* Witte tekst */
+  text-align: center;
+  text-decoration: none; /* Verwijder de onderlijning */
+  border-radius: 0.3rem; /* Ronde hoeken */
+  font-size: var(--font-size-s); /* Tekstgrootte */
+  transition: background-color 0.3s ease; /* Hover-effect */
+  font-family: "Comfortaa", sans-serif;
+}
+
+.button:hover {
+  background-color: var(--tui-accent-red-color); /* Donkerder blauwe kleur bij hover */
+}
+
+.card-text {
+    font-family: "Comfortaa", sans-serif;
+  font-size: var(--font-size-s);
+  color: var(--font-color1);
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}
+
+.card-container {
+  margin: 6.25rem;
 }
