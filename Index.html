@@ -15,91 +15,146 @@
 <body>
   <div class="hero hero-container">
     <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="./images/LogoSmall.png" alt="TUI" class="image"></a>
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="/images/logosmall.png" alt="Logo" class="img-fluid">
+        </a>
+
+        <!-- Hamburger Toggle Button -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      </div>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Over ons</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Bestemmingen</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">Inspiratie</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">Contact</a>
-          </li>
-        </ul>
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
     <div class="hero intro intro-container">
-      <h1 class="hero intro intro-title">Ontdek de wereld met TUI</h1>
-      <p class="hero intro intro-paragraph">Droom je van een tropisch strand, een bruisende stedentrip of een avontuurlijke
-        rondreis? Onze reisexperts helpen je
-        graag om jouw ideale vakantie samen te stellen.
-        Bezoek een TUI-reisbureau bij jou in de buurt voor persoonlijk advies, exclusieve deals en handige tips.
-        Laat ons jouw reiswensen waarmaken - stap vandaag nog binnen!</p>
-      <a href="" class="hero hero-buttons">Afspraak maken</a> 
-      <a href="" class="hero hero-buttons">Inspiratie zoeken</a>
+      <div class="container">
+        <div class="row">
+          <!-- Tekst kolom -->
+          <div class="col-lg-8 col-md-12">
+            <h1 class="hero intro intro-title">Ontdek de wereld met TUI</h1>
+            <p class="hero intro intro-paragraph">Droom je van een tropisch strand, een bruisende stedentrip of een
+              avontuurlijke
+              rondreis? Onze reisexperts helpen je graag om jouw ideale vakantie samen te stellen.
+              Bezoek een TUI-reisbureau bij jou in de buurt voor persoonlijk advies, exclusieve deals en handige tips.
+              Laat ons jouw reiswensen waarmaken - stap vandaag nog binnen!</p>
+
+            <!-- Knoppen horizontaal naast elkaar -->
+            <div class="d-flex">
+              <a href="" class="hero hero-buttons me-3">Afspraak maken</a>
+              <a href="" class="hero hero-buttons">Inspiratie zoeken</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div>
-
-  </div>
 
 
 
 
-  <div class="container-footer">
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-logo">
-          <img src="/images/LogoLarge.png" alt="Bedrijfslogo">
+
+
+
+
+
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <!-- First Row with 5 sections horizontally -->
+      <div class="row">
+        <!-- Logo in Column 1 -->
+        <div class="col-12 col-md-1">
+          <img src="logo.png" alt="Logo" class="img-fluid">
         </div>
-        <nav class="footer-nav-block">
-          <ul class="footer-nav">
-            <li class="footer-nav-item"><a href="#">Home</a></li>
-            <li class="footer-nav-item"><a href="#">Over ons</a></li>
-            <li class="footer-nav-item"><a href="#">Vakantie</a></li>
-            <li class="footer-nav-item"><a href="#">Inspiratie</a></li>
-            <li class="footer-nav-item"><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-        <nav class="footer-nav-block-extra">
-          <ul class="footer-nav">
-            <li class="footer-nav-item"><a href="#">FAQ</a></li>
-            <li class="footer-nav-item"><a href="#">Algemene voorwaarden</a></li>
-            <li class="footer-nav-item"><a href="#">Privacy Policy</a></li>
-          </ul>
-        </nav>
-        <div class="footer-nav-newsletter">
-          <form action="#" method="POST">
-            <label for="email">Abonneer op de nieuwsbrief</label>
-            <input type="email" name="email" id="email" placeholder="Voer je e-mailadres in" required>
-            <a href=""><img src="svg/union.svg" alt="Verstuur"></a>
+
+        <!-- Vertical Nav in Column 4 -->
+        <div class="col-12 col-md-2">
+          <nav class="nav flex-column">
+            <a class="nav-link text-white" href="#">Item 1</a>
+            <a class="nav-link text-white" href="#">Item 2</a>
+            <a class="nav-link text-white" href="#">Item 3</a>
+            <a class="nav-link text-white" href="#">Item 4</a>
+            <a class="nav-link text-white" href="#">Item 5</a>
+          </nav>
+        </div>
+
+        <!-- Horizontal Nav in Column 6 (stacked vertically on smaller screens) -->
+        <div class="col-12 col-md-3">
+          <nav class="nav flex-column flex-md-row">
+            <a class="nav-link text-white" href="#">Link 1</a>
+            <a class="nav-link text-white" href="#">Link 2</a>
+            <a class="nav-link text-white" href="#">Link 3</a>
+          </nav>
+        </div>
+
+        <!-- Newsletter Form in Column 9, with added left margin -->
+        <div class="col-12 col-md-3 ms-md-3">
+          <form>
+            <div class="mb-3">
+              <label for="newsletterEmail" class="form-label text-white">Subscribe to our Newsletter</label>
+              <input type="email" class="form-control" id="newsletterEmail" placeholder="Enter your email">
+            </div>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
           </form>
         </div>
-        <div class="footer-nav-socials">
-          <a href="#" aria-label="Instagram"><img src="svg/instagram.svg" alt="Instagram"></a>
-          <a href="#" aria-label="Facebook"><img src="svg/facebook.svg" alt="Facebook"></a>
-          <a href="#" aria-label="TikTok"><img src="svg/tiktok.svg" alt="TikTok"></a>
+
+        <!-- Social Media Logos in Column 12 -->
+        <div class="col-12 col-md-3 text-center">
+          <a href="#" class="text-white mx-2">
+            <img src="facebook-logo.png" alt="Facebook" class="img-fluid" width="30">
+          </a>
+          <a href="#" class="text-white mx-2">
+            <img src="twitter-logo.png" alt="Twitter" class="img-fluid" width="30">
+          </a>
+          <a href="#" class="text-white mx-2">
+            <img src="instagram-logo.png" alt="Instagram" class="img-fluid" width="30">
+          </a>
         </div>
       </div>
-    </footer>
-  </div>
+
+      <!-- Second Row with Copyright, Privacy Policy, and Terms -->
+      <div class="row">
+        <div class="col-12 text-center text-white">
+          <small>&copy; 2025 - Privacy Policy | General Terms & Conditions</small>
+        </div>
+      </div>
+
+      <!-- Third Row with School Info -->
+      <div class="row">
+        <div class="col-12 text-center text-white">
+          <img src="school-logo.png" alt="School Logo" class="img-fluid" width="50">
+          <p class="d-inline-block ms-2 mb-0">Dit is een schoolopdracht binnen de opleiding Webdesign & Webdevelopment,
+            Howest 2024 - 2025</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

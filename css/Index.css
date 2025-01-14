@@ -1,5 +1,5 @@
 :root {
-  --tui-primary-color: #70cbf4;
+  --tui-primary-color: #70caf4;
   --tui-background-color: #ffffff;
   --tui-red-color: #d40e14;
   --tui-accent-red-color: #ff494e;
@@ -14,7 +14,6 @@
   --font-size-l: 3rem;
   --font-size-m: 2rem;
   --font-size-s: 1.125rem;
-
 }
 
 @font-face {
@@ -50,8 +49,6 @@
   /* Optioneel: stijl specificeren */
 }
 
-
-
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -74,6 +71,9 @@ html {
 /* Gebruik van het lettertype */
 h1 {
   font-family: "Exo2", sans-serif;
+  font-size: var(--font-size-xl);
+  color: var(--font-color2);
+  margin-bottom: 1rem;
   /* 'Exo2' gebruiken met fallback */
 }
 
@@ -87,159 +87,44 @@ h3 {
   /* 'Exo2' gebruiken met fallback */
 }
 
+p {
+  font-family: "Comfortaa", sans-serif;
+  font-size: var(--font-size-s);
+  color: var(--font-color2);
+  margin-bottom: 1rem;
+}
 
-
-
-
-
-
-/*
-.navbar {
+.hero-container {
+  background-image: url(/images/heroimg.png);
   width: 100%;
-  max-width: 75rem;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 1rem;
-  align-items: center;
+  padding: 2rem 0; /* 2rem is 32px, equivalent to 2 * 16px */
 }
 
-.navbar-collapse {
-  grid-column-start: 8;
-  grid-column-end: span 5;
-}
-
-.container-fluid .navbar-brand {
-  grid-column-start: 1;
-  grid-column-end: span 2;
-}
-
-.nav-link {
-  margin: 10px;
-}
-
-/* Algemene instellingen */
-/*
-html {
-  box-sizing: border-box;
-  font-size: 1rem;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
-/* FOOTER BASISOPMAAK */
-/*
-.footer {
-  background-color: var(--tui-primary-color);
-  width: 100%;
-  padding: 2rem 0;
-}
-
-.footer-container {
-  width: 100%;
-  max-width: 75rem;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 1rem;
-}
-
-/* LOGO-INSTELLINGEN */
-/*
-.footer-logo {
-  grid-column: 1 / 4;
-  display: flex;
-  align-items: center;
-}
-
-.footer-logo img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* NAVIGATIE LINKS */
-/*
-.footer-nav-block {
-  grid-column: 4 / 6;
-}
-
-.footer-nav-block-extra {
-  grid-column: 6 / 9;
-}
-
-.footer-nav {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.list-unstyled {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1.25rem; /* 1.25rem = 20px */
+  padding-left: 0;
 }
 
-.footer-nav-item a {
-  text-decoration: none;
-  color: #000;
-  font-size: 0.875rem;
-  transition: color 0.3s;
+.hero.intro-container {
+  margin-top: 8.75rem; /* 140px omgezet naar rem, 1rem = 16px */
 }
 
-.footer-nav-item a:hover {
-  color: #f00;
+.hero.hero-buttons {
+  display: inline-block;
+  padding: 0.625rem 1.25rem; /* 10px boven/onder en 20px links/rechts */
+  margin: 0.625rem 0; /* 10px marge boven en onder de knop */
+  background-color: #007bff; /* Knop kleur */
+  color: white; /* Witte tekst */
+  text-align: center;
+  text-decoration: none; /* Verwijder de onderlijning */
+  border-radius: 0.375rem; /* Ronde hoeken */
+  font-size: 1rem; /* Tekstgrootte */
+  transition: background-color 0.3s ease; /* Hover-effect */
+
 }
 
-/* NIEUWSBRIEFSECTIE */
-/*
-.footer-nav-newsletter {
-  grid-column: 9 / 11;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+.hero.hero-buttons:hover {
+  background-color: #0056b3; /* Donkerder blauwe kleur bij hover */
 }
-
-.footer-nav-newsletter label {
-  font-size: 1rem;
-}
-
-.footer-nav-newsletter input {
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 0.25rem;
-}
-
-.newsletter-submit {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.newsletter-submit img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* SOCIALE MEDIA LINKS */
-/*
-.footer-nav-socials {
-  grid-column: 11 / 13;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  align-items: flex-end;
-}
-
-.footer-nav-socials img {
-  width: 1.5625rem;
-  height: 1.75rem;
-}
-*/
