@@ -137,8 +137,7 @@ html {
   background-image: url(/images/heroimg.png);
   background-repeat: no-repeat;
   width: 100%;
-  padding: 2rem 0;
-  margin-bottom: 6.25rem;
+  padding: 3rem;
 }
 
 /* hero overons background img */
@@ -174,9 +173,9 @@ html {
   padding-left: 0;
 }
 
-
+/* to make it get closer to nav */
 .intro-container {
-  margin-top: 8.75rem;
+  margin-top: 6.25rem;
 }
 
 /* hero button primary intro */
@@ -283,6 +282,11 @@ html {
 
 /* costum boostrap property */
 .my-6-25 {
-  margin-top: 6.25rem;
   margin-bottom: 6.25rem;
+}
+
+
+.service-card {
+  border: 2px solid var(--tui-primary-color); /* Add your border color here */
+  padding: 1rem; /* Padding inside the border */
 }
