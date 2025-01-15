@@ -1,3 +1,4 @@
+/* root met al de vars in voor kleuren en font sizes */
 :root {
   --tui-primary-color: #70caf4;
   --tui-background-color: #ffffff;
@@ -16,6 +17,7 @@
   --font-size-s: 1.125rem;
 }
 
+/* font family Exo2 */
 @font-face {
   font-family: "Exo2";
   src: url("/fonts/Exo2-VariableFont_wght.ttf") format("truetype");
@@ -23,6 +25,7 @@
   font-style: normal;
 }
 
+/* font family Comfortaa */
 @font-face {
   font-family: "Comfortaa";
   src: url("/fonts/Comfortaa-VariableFont_wght.ttf") format("truetype");
@@ -30,12 +33,14 @@
   font-style: normal;
 }
 
+/* font family Jura */
 @font-face {
   font-family: "Jura";
   src: url("/fonts/Jura-VariableFont_wght.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: bold;
   font-style: normal;
 }
+
 
 html {
   box-sizing: border-box;
@@ -55,6 +60,7 @@ html {
   padding: 0;
 }
 
+/* h1 titles white color */
 .title {
   font-family: "Exo2", sans-serif;
   font-size: var(--font-size-xl);
@@ -62,6 +68,7 @@ html {
   margin-bottom: 1rem;
 }
 
+/* h2 titles white color */
 .title2-1 {
   font-family: "Exo2", sans-serif;
   font-size: var(--font-size-l);
@@ -69,6 +76,7 @@ html {
   margin-bottom: 1rem;
 }
 
+/* h2 titles black color */
 .title2-2 {
   font-family: "Exo2", sans-serif;
   font-size: var(--font-size-l);
@@ -76,12 +84,21 @@ html {
   margin-bottom: 1rem;
 }
 
+/* h3 titles black color */
+.title3-1 {
+  font-family: "Exo2", sans-serif;
+  font-size: var(--font-size-m);
+  color: var(--font-color2);
+}
+
+/* h3 titles black color */
 .title3-2 {
   font-family: "Exo2", sans-serif;
   font-size: var(--font-size-m);
   color: var(--font-color1);
 }
 
+/* text titles white color */
 .text1 {
   font-family: "Comfortaa", sans-serif;
   font-size: var(--font-size-s);
@@ -90,10 +107,7 @@ html {
   line-height: 1.5;
 }
 
-.text1-contact {
-  padding-bottom: 4rem;
-}
-
+/* text titles black color */
 .text2 {
   font-family: "Comfortaa", sans-serif;
   font-size: var(--font-size-s);
@@ -102,19 +116,23 @@ html {
   line-height: 1.5;
 }
 
-.title_card {
+/* card titles black color */
+.card-title {
+  font-family: "Exo2", sans-serif;
+  font-size: var(--font-size-m);
+  color: var(--font-color1);
+  margin-bottom: 1rem;
+}
+
+/* card hero titles black color */
+.card-title-hero {
   font-family: "Exo2", sans-serif;
   font-size: var(--font-size-l);
   color: var(--font-color1);
   margin-bottom: 1rem;
 }
 
-.card-title {
-  font-size: var(--font-size-m);
-  color: var(--font-color1);
-  margin-bottom: 1rem;
-}
-
+/* hero home background img */
 .hero-container {
   background-image: url(/images/heroimg.png);
   background-repeat: no-repeat;
@@ -123,6 +141,7 @@ html {
   margin-bottom: 6.25rem;
 }
 
+/* hero overons background img */
 .overons-container {
   background-image: url(/images/overonsheroimg.png);
   background-repeat: no-repeat;
@@ -130,6 +149,7 @@ html {
   padding: 2rem 0;
 }
 
+/* hero bestemming background img */
 .bestemming-container {
   background-image: url(/images/bestemmingenheroimg.png);
   background-repeat: no-repeat;
@@ -137,6 +157,7 @@ html {
   padding: 2rem 0;
 }
 
+/* hero contact background img */
 .container-contact {
   background-image: url(/images/contactimg.png);
   background-repeat: no-repeat;
@@ -145,6 +166,7 @@ html {
   padding: 2rem 0;
 }
 
+
 .list-unstyled {
   display: flex;
   flex-direction: column;
@@ -152,10 +174,12 @@ html {
   padding-left: 0;
 }
 
+
 .intro-container {
   margin-top: 8.75rem;
 }
 
+/* hero button primary intro */
 .hero-buttons-primary {
   display: inline-block;
   padding: 0.625rem 1.25rem;
@@ -170,10 +194,12 @@ html {
   font-family: "Comfortaa", sans-serif;
 }
 
+/* hero button primary hover intro */
 .hero.hero-buttons-primary:hover {
   background-color: var(--tui-accent-red-color);
 }
 
+/* hero button secondary intro */
 .hero-buttons-secondary {
   display: inline-block;
   padding: 0.625rem 1.25rem;
@@ -188,35 +214,43 @@ html {
   font-family: "Comfortaa", sans-serif;
 }
 
+/* hero button secondary hover intro */
 .hero-buttons-secondary:hover {
   background-color: var(--tui-primary-color);
 }
 
+/* nav items text color white */
 .nav-link {
   color: var(--font-color2);
   font-family: "Jura", sans-serif;
 }
-
+/* nav items text color black */
 .nav-link-dark{
     color: var(--font-color1);
 }
+
+/* nav items hover text color red */
 .nav-link:hover {
   color: var(--tui-red-color);
 }
 
+/* nav items active text color red */
 .active1 {
   color: var(--tui-red-color);
 }
 
+/* nav items active text color red */
 .active2 {
   background-color: var(--tui-accent-red-color);
 }
 
+/* card bestemmingen border color */
 .card {
   border: 0.2rem solid var(--tui-darkblue-color);
   border-radius: 0.65rem;
 }
 
+/* primary button */
 .button {
   display: inline-block;
   padding: 0.625rem 1.25rem;
@@ -231,10 +265,12 @@ html {
   font-family: "Comfortaa", sans-serif;
 }
 
+/* primary button hover */
 .button:hover {
   background-color: var(--tui-accent-red-color);
 }
 
+/* text for cards */
 .card-text {
   font-family: "Comfortaa", sans-serif;
   font-size: var(--font-size-s);
@@ -242,8 +278,11 @@ html {
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
   line-height: 1.5;
+  list-style: none;
 }
 
-.card-container {
-  margin: 6.25rem;
+/* costum boostrap property */
+.my-6-25 {
+  margin-top: 6.25rem;
+  margin-bottom: 6.25rem;
 }
