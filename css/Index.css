@@ -156,6 +156,14 @@ h3 {
   padding: 2rem 0; /* 2rem is 32px, equivalent to 2 * 16px */
 }
 
+.container-contact {
+  background-image: url(/images/contactimg.png);
+  background-repeat: no-repeat;
+  background-size: cover; /* Zorgt ervoor dat de afbeelding volledig bedekt */
+  width: 100%; /* Volledige breedte */
+  padding: 2rem 0;
+}
+
 .list-unstyled {
   display: flex;
   flex-direction: column;
@@ -254,12 +262,4 @@ h3 {
 
 .card-container {
   margin: 6.25rem;
-}
-
-.container-contact {
-  background-image: url(/images/contactimg.png);
-  background-repeat: no-repeat;
-  background-size: cover; /* Zorgt ervoor dat de afbeelding volledig bedekt */
-  width: 100%; /* Volledige breedte */
-  padding: 2rem 0;
 }
