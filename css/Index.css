@@ -105,6 +105,10 @@ h3 {
   line-height: 1.5;
 }
 
+.text1-contact {
+    padding-bottom: 4rem;
+}
+
 .text2 {
   font-family: "Comfortaa", sans-serif;
   font-size: var(--font-size-s);
@@ -250,4 +254,12 @@ h3 {
 
 .card-container {
   margin: 6.25rem;
+}
+
+.container-contact {
+  background-image: url(/images/contactimg.png);
+  background-repeat: no-repeat;
+  background-size: cover; /* Zorgt ervoor dat de afbeelding volledig bedekt */
+  width: 100%; /* Volledige breedte */
+  padding: 2rem 0;
 }
