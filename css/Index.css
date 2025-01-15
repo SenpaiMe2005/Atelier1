@@ -91,7 +91,7 @@ html {
     margin-bottom: 1rem;
 }
 
-h3 {
+.title3-2 {
   font-family: "Exo2", sans-serif;
   font-size: var(--font-size-m);
   color: var(--font-color1);
