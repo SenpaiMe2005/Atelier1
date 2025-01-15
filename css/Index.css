@@ -18,41 +18,28 @@
 
 @font-face {
   font-family: "Exo2";
-  /* Font-naam */
   src: url("/fonts/Exo2-VariableFont_wght.ttf") format("truetype");
-  /* Bestandslocatie en format */
   font-weight: normal;
-  /* Optioneel: gewicht specificeren */
   font-style: normal;
-  /* Optioneel: stijl specificeren */
 }
 
 @font-face {
   font-family: "Comfortaa";
-  /* Font-naam */
   src: url("/fonts/Comfortaa-VariableFont_wght.ttf") format("truetype");
-  /* Bestandslocatie en format */
   font-weight: normal;
-  /* Optioneel: gewicht specificeren */
   font-style: normal;
-  /* Optioneel: stijl specificeren */
 }
 
 @font-face {
   font-family: "Jura";
-  /* Font-naam */
   src: url("/fonts/Jura-VariableFont_wght.ttf") format("truetype");
-  /* Bestandslocatie en format */
   font-weight: normal;
-  /* Optioneel: gewicht specificeren */
   font-style: normal;
-  /* Optioneel: stijl specificeren */
 }
 
 html {
   box-sizing: border-box;
   font-size: 16px;
-  /* Standard font size (1rem = 16px) */
 }
 
 *,
@@ -68,27 +55,25 @@ html {
   padding: 0;
 }
 
-/* Gebruik van het lettertype */
 .title {
   font-family: "Exo2", sans-serif;
   font-size: var(--font-size-xl);
   color: var(--font-color2);
   margin-bottom: 1rem;
-  /* 'Exo2' gebruiken met fallback */
 }
 
 .title2-1 {
   font-family: "Exo2", sans-serif;
   font-size: var(--font-size-l);
   color: var(--font-color2);
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .title2-2 {
   font-family: "Exo2", sans-serif;
   font-size: var(--font-size-l);
   color: var(--font-color1);
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .title3-2 {
@@ -106,7 +91,7 @@ html {
 }
 
 .text1-contact {
-    padding-bottom: 4rem;
+  padding-bottom: 4rem;
 }
 
 .text2 {
@@ -122,23 +107,19 @@ html {
   font-size: var(--font-size-l);
   color: var(--font-color1);
   margin-bottom: 1rem;
-
-  /* 'Exo2' gebruiken met fallback */
 }
 
 .card-title {
-    font-size: var(--font-size-m);
+  font-size: var(--font-size-m);
   color: var(--font-color1);
   margin-bottom: 1rem;
 }
-
-
 
 .hero-container {
   background-image: url(/images/heroimg.png);
   background-repeat: no-repeat;
   width: 100%;
-  padding: 2rem 0; /* 2rem is 32px, equivalent to 2 * 16px */
+  padding: 2rem 0;
   margin-bottom: 6.25rem;
 }
 
@@ -146,69 +127,69 @@ html {
   background-image: url(/images/overonsheroimg.png);
   background-repeat: no-repeat;
   width: 100%;
-  padding: 2rem 0; /* 2rem is 32px, equivalent to 2 * 16px */
+  padding: 2rem 0;
 }
 
 .bestemming-container {
-    background-image: url(/images/bestemmingenheroimg.png);
+  background-image: url(/images/bestemmingenheroimg.png);
   background-repeat: no-repeat;
   width: 100%;
-  padding: 2rem 0; /* 2rem is 32px, equivalent to 2 * 16px */
+  padding: 2rem 0;
 }
 
 .container-contact {
   background-image: url(/images/contactimg.png);
   background-repeat: no-repeat;
-  background-size: cover; /* Zorgt ervoor dat de afbeelding volledig bedekt */
-  width: 100%; /* Volledige breedte */
+  background-size: cover;
+  width: 100%;
   padding: 2rem 0;
 }
 
 .list-unstyled {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem; /* 1.25rem = 20px */
+  gap: 1.25rem;
   padding-left: 0;
 }
 
 .intro-container {
-  margin-top: 8.75rem; /* 140px omgezet naar rem, 1rem = 16px */
+  margin-top: 8.75rem;
 }
 
 .hero-buttons-primary {
   display: inline-block;
-  padding: 0.625rem 1.25rem; /* 10px boven/onder en 20px links/rechts */
-  margin: 0.625rem 0; /* 10px marge boven en onder de knop */
-  background-color: var(--tui-red-color); /* Knop kleur */
-  color: white; /* Witte tekst */
+  padding: 0.625rem 1.25rem;
+  margin: 0.625rem 0;
+  background-color: var(--tui-red-color);
+  color: white;
   text-align: center;
-  text-decoration: none; /* Verwijder de onderlijning */
-  border-radius: 0.3rem; /* Ronde hoeken */
-  font-size: var(--font-size-s); /* Tekstgrootte */
-  transition: background-color 0.3s ease; /* Hover-effect */
-    font-family: "Comfortaa", sans-serif;
+  text-decoration: none;
+  border-radius: 0.3rem;
+  font-size: var(--font-size-s);
+  transition: background-color 0.3s ease;
+  font-family: "Comfortaa", sans-serif;
 }
 
 .hero.hero-buttons-primary:hover {
-  background-color: var(--tui-accent-red-color); /* Donkerder blauwe kleur bij hover */
+  background-color: var(--tui-accent-red-color);
 }
 
 .hero-buttons-secondary {
   display: inline-block;
-  padding: 0.625rem 1.25rem; /* 10px boven/onder en 20px links/rechts */
-  margin: 0.625rem 0; /* 10px marge boven en onder de knop */
-  border: 2px solid var(--tui-primary-color); /* Knop kleur */
-  color: white; /* Witte tekst */
+  padding: 0.625rem 1.25rem;
+  margin: 0.625rem 0;
+  border: 2px solid var(--tui-primary-color);
+  color: white;
   text-align: center;
-  text-decoration: none; /* Verwijder de onderlijning */
-  border-radius: 0.3rem; /* Ronde hoeken */
-  font-size: var(--font-size-s); /* Tekstgrootte */
-  transition: background-color 0.3s ease; /* Hover-effect */
+  text-decoration: none;
+  border-radius: 0.3rem;
+  font-size: var(--font-size-s);
+  transition: background-color 0.3s ease;
   font-family: "Comfortaa", sans-serif;
 }
 
 .hero-buttons-secondary:hover {
-  background-color: var(--tui-primary-color); /* Donkerder blauwe kleur bij hover */
+  background-color: var(--tui-primary-color);
 }
 
 .nav-link {
@@ -216,6 +197,9 @@ html {
   font-family: "Jura", sans-serif;
 }
 
+.nav-link-dark{
+    color: var(--font-color1);
+}
 .nav-link:hover {
   color: var(--tui-red-color);
 }
@@ -225,34 +209,34 @@ html {
 }
 
 .active2 {
-    background-color: var(--tui-accent-red-color);
+  background-color: var(--tui-accent-red-color);
 }
 
 .card {
-   border: 0.2rem solid var(--tui-darkblue-color);
-   border-radius: 0.65rem;
+  border: 0.2rem solid var(--tui-darkblue-color);
+  border-radius: 0.65rem;
 }
 
 .button {
   display: inline-block;
-  padding: 0.625rem 1.25rem; /* 10px boven/onder en 20px links/rechts */
-  margin: 0.625rem 0; /* 10px marge boven en onder de knop */
-  background-color: var(--tui-red-color); /* Knop kleur */
-  color: white; /* Witte tekst */
+  padding: 0.625rem 1.25rem;
+  margin: 0.625rem 0;
+  background-color: var(--tui-red-color);
+  color: white;
   text-align: center;
-  text-decoration: none; /* Verwijder de onderlijning */
-  border-radius: 0.3rem; /* Ronde hoeken */
-  font-size: var(--font-size-s); /* Tekstgrootte */
-  transition: background-color 0.3s ease; /* Hover-effect */
+  text-decoration: none;
+  border-radius: 0.3rem;
+  font-size: var(--font-size-s);
+  transition: background-color 0.3s ease;
   font-family: "Comfortaa", sans-serif;
 }
 
 .button:hover {
-  background-color: var(--tui-accent-red-color); /* Donkerder blauwe kleur bij hover */
+  background-color: var(--tui-accent-red-color);
 }
 
 .card-text {
-    font-family: "Comfortaa", sans-serif;
+  font-family: "Comfortaa", sans-serif;
   font-size: var(--font-size-s);
   color: var(--font-color1);
   margin-bottom: 0.5rem;
