@@ -68,6 +68,13 @@ html {
   margin-bottom: 1rem;
 }
 
+.title1 {
+  font-family: "Exo2", sans-serif;
+  font-size: var(--font-size-xl);
+  color: var(--font-color1);
+  margin-bottom: 1rem;
+}
+
 /* h2 titles white color */
 .title2-1 {
   font-family: "Exo2", sans-serif;
@@ -311,11 +318,64 @@ ul {
     background-color: var(--tui-primary-color); /* Light background color */
 }
 
-/* CSS for rotating SVG */
+/* CSS for rotating SVG when collapsed */
 .rotate-icon {
     transition: transform 0.3s ease;
 }
 
-.rotate-45 {
+button.collapsed .rotate-icon {
     transform: rotate(45deg);
+}
+
+.islandimg {
+  border: 2.5px solid var(--tui-darkblue-color);
+  border-radius: 1.5rem;
+}
+
+
+/* Verhoog padding voor inputvelden en textarea in rem */
+.input-custom {
+    padding: 0.75rem 1.25rem; /* Padding voor de invoervelden */
+    font-size: 1rem;          /* Fontgrootte */
+    border: 0.0625rem solid #ccc; /* Randkleur van invoervelden */
+    background-color: var(--tui-lightblue-color);   /* Achtergrondkleur van invoervelden */              /* Tekstkleur */
+    border-radius: 0.25rem;   /* Afgeronde hoeken */
+}
+
+/* Focus effect voor inputvelden */
+.input-custom:focus {
+    border-color: var(--tui-red-color);  
+        background-color: var(--tui-lightblue-color);  /* Focus randkleur */
+    outline: none;            /* Verwijder standaard focus outline */
+}
+
+/* Zelfde voor textarea */
+.textarea-custom {
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    background-color:  var(--tui-lightblue-color);
+
+    border-radius: 0.25rem;
+}
+
+/* Focus effect voor textarea */
+.textarea-custom:focus {
+    border: none;
+    outline: none;
+}
+
+/* Styling voor de submit button */
+.button-custom {
+    padding: 0.75rem 2rem; /* Padding voor de knop */
+    font-size: 1rem;       /* Fontgrootte */
+    background-color: var(--tui-red-color); /* Achtergrondkleur */
+    color: white;          /* Tekstkleur van de knop */
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+/* Hover effect voor de knop */
+.button-custom:hover {
+    background-color: var(--tui-accent-red-color); /* Hover achtergrondkleur */
 }
