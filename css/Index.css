@@ -41,7 +41,6 @@
   font-style: normal;
 }
 
-
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -145,7 +144,6 @@ html {
   background-repeat: no-repeat;
   width: 100%;
   padding: 0 3rem 3rem 3rem;
-      background-size: cover;
 }
 
 /* hero overons background img */
@@ -154,7 +152,7 @@ html {
   background-repeat: no-repeat;
   width: 100%;
   padding: 0 3rem 3rem 3rem;
-      background-size: cover;
+  background-size: cover;
 }
 
 /* hero bestemming background img */
@@ -163,7 +161,7 @@ html {
   background-repeat: no-repeat;
   width: 100%;
   padding: 0 3rem 3rem 3rem;
-    background-size: cover;
+  background-size: cover;
 }
 
 /* hero contact background img */
@@ -174,7 +172,6 @@ html {
   width: 100%;
   padding: 3rem 3rem 3rem 3rem;
 }
-
 
 .list-unstyled {
   display: flex;
@@ -234,8 +231,8 @@ html {
   font-family: "Jura", sans-serif;
 }
 /* nav items text color black */
-.nav-link-dark{
-    color: var(--font-color1);
+.nav-link-dark {
+  color: var(--font-color1);
 }
 
 /* nav items hover text color red */
@@ -312,19 +309,19 @@ ul {
 }
 
 .click-container {
-    padding: 0.9375rem; /* Adds space around each collapsible item */
-    border-radius: 0.625rem; /* Optional: Rounded corners */
-    margin-bottom: 0.625rem; /* Adds spacing between collapsible items */
-    background-color: var(--tui-primary-color); /* Light background color */
+  padding: 0.9375rem; /* Adds space around each collapsible item */
+  border-radius: 0.625rem; /* Optional: Rounded corners */
+  margin-bottom: 0.625rem; /* Adds spacing between collapsible items */
+  background-color: var(--tui-primary-color); /* Light background color */
 }
 
 /* CSS for rotating SVG when collapsed */
 .rotate-icon {
-    transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 button.collapsed .rotate-icon {
-    transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .islandimg {
@@ -332,50 +329,51 @@ button.collapsed .rotate-icon {
   border-radius: 1.5rem;
 }
 
-
 /* Verhoog padding voor inputvelden en textarea in rem */
 .input-custom {
-    padding: 0.75rem 1.25rem; /* Padding voor de invoervelden */
-    font-size: 1rem;          /* Fontgrootte */
-    border: 0.0625rem solid #ccc; /* Randkleur van invoervelden */
-    background-color: var(--tui-lightblue-color);   /* Achtergrondkleur van invoervelden */              /* Tekstkleur */
-    border-radius: 0.25rem;   /* Afgeronde hoeken */
+  padding: 0.75rem 1.25rem; /* Padding voor de invoervelden */
+  font-size: 1rem; /* Fontgrootte */
+  border: 0.0625rem solid #ccc; /* Randkleur van invoervelden */
+  background-color: var(
+    --tui-lightblue-color
+  ); /* Achtergrondkleur van invoervelden */ /* Tekstkleur */
+  border-radius: 0.25rem; /* Afgeronde hoeken */
 }
 
 /* Focus effect voor inputvelden */
 .input-custom:focus {
-    border-color: var(--tui-red-color);  
-        background-color: var(--tui-lightblue-color);  /* Focus randkleur */
-    outline: none;            /* Verwijder standaard focus outline */
+  border-color: var(--tui-red-color);
+  background-color: var(--tui-lightblue-color); /* Focus randkleur */
+  outline: none; /* Verwijder standaard focus outline */
 }
 
 /* Zelfde voor textarea */
 .textarea-custom {
-    padding: 0.75rem 1.25rem;
-    font-size: 1rem;
-    background-color:  var(--tui-lightblue-color);
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  background-color: var(--tui-lightblue-color);
 
-    border-radius: 0.25rem;
+  border-radius: 0.25rem;
 }
 
 /* Focus effect voor textarea */
 .textarea-custom:focus {
-    border: none;
-    outline: none;
+  border: none;
+  outline: none;
 }
 
 /* Styling voor de submit button */
 .button-custom {
-    padding: 0.75rem 2rem; /* Padding voor de knop */
-    font-size: 1rem;       /* Fontgrootte */
-    background-color: var(--tui-red-color); /* Achtergrondkleur */
-    color: white;          /* Tekstkleur van de knop */
-    border: none;
-    border-radius: 0.25rem;
-    cursor: pointer;
+  padding: 0.75rem 2rem; /* Padding voor de knop */
+  font-size: 1rem; /* Fontgrootte */
+  background-color: var(--tui-red-color); /* Achtergrondkleur */
+  color: white; /* Tekstkleur van de knop */
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
 }
 
 /* Hover effect voor de knop */
 .button-custom:hover {
-    background-color: var(--tui-accent-red-color); /* Hover achtergrondkleur */
+  background-color: var(--tui-accent-red-color); /* Hover achtergrondkleur */
 }
