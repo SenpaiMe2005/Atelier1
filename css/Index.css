@@ -303,3 +303,19 @@ img {
 ul {
   padding: 0;
 }
+
+.click-container {
+    padding: 0.9375rem; /* Adds space around each collapsible item */
+    border-radius: 0.625rem; /* Optional: Rounded corners */
+    margin-bottom: 0.625rem; /* Adds spacing between collapsible items */
+    background-color: var(--tui-primary-color); /* Light background color */
+}
+
+/* CSS for rotating SVG */
+.rotate-icon {
+    transition: transform 0.3s ease;
+}
+
+.rotate-45 {
+    transform: rotate(45deg);
+}

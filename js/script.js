@@ -48,3 +48,9 @@ function renderOpeningsuren() {
 
 // Openingsuren genereren bij pagina laden
 document.addEventListener("DOMContentLoaded", renderOpeningsuren);
+
+
+function rotateSVG(button) {
+    const svgIcon = button.querySelector('.rotate-icon');
+    svgIcon.classList.toggle('rotate-45');
+}
