@@ -137,7 +137,8 @@ html {
   background-image: url(/images/heroimg.png);
   background-repeat: no-repeat;
   width: 100%;
-  padding: 3rem;
+  padding: 0 3rem 3rem 3rem;
+      background-size: cover;
 }
 
 /* hero overons background img */
@@ -145,7 +146,8 @@ html {
   background-image: url(/images/overonsheroimg.png);
   background-repeat: no-repeat;
   width: 100%;
-  padding: 2rem 0;
+  padding: 0 3rem 3rem 3rem;
+      background-size: cover;
 }
 
 /* hero bestemming background img */
@@ -153,7 +155,8 @@ html {
   background-image: url(/images/bestemmingenheroimg.png);
   background-repeat: no-repeat;
   width: 100%;
-  padding: 2rem 0;
+  padding: 0 3rem 3rem 3rem;
+    background-size: cover;
 }
 
 /* hero contact background img */
@@ -162,7 +165,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  padding: 2rem 0;
+  padding: 0 3rem 3rem 3rem;
 }
 
 
@@ -294,4 +297,8 @@ html {
 img {
   width: 100%;
   height: auto;
+}
+
+ul {
+  padding: 0;
 }
