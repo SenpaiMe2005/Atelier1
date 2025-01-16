@@ -378,3 +378,20 @@ button.collapsed .rotate-icon {
 .button-custom:hover {
   background-color: var(--tui-accent-red-color); /* Hover achtergrondkleur */
 }
+
+
+.footer {
+  background-color: var(--tui-primary-color);
+}
+
+.social-icon img {
+  width: 1.25rem;
+}
+
+footer img {
+  width: 5rem;
+}
+
+footer p {
+  font-size: 0.875rem;
+}
