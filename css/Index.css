@@ -291,3 +291,7 @@ html {
   padding: 1rem; /* Padding inside the border */
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
