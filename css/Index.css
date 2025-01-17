@@ -396,3 +396,15 @@ footer p {
   font-size: 0.875rem;
 
 }
+
+.small-link {
+  font-size: 0.875rem; /* Kleinere tekstgrootte */
+  display: inline-flex; /* Houd tekst en afbeelding op één lijn */
+  align-items: center; /* Centraal uitlijnen */
+}
+
+.small-link .icon-small {
+  width: 16px; /* Maak de SVG kleiner */
+  height: auto;
+  margin-right: 5px; /* Ruimte tussen de afbeelding en de tekst */
+}
