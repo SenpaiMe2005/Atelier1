@@ -140,7 +140,7 @@ html {
 
 /* hero home background img */
 .hero-container {
-  background-image: url(/images/heroimg.png);
+  background-image: url(../images/heroimg.png);
   background-repeat: no-repeat;
   width: 100%;
   padding: 0 3rem 3rem 3rem;
@@ -149,7 +149,7 @@ html {
 
 /* hero overons background img */
 .overons-container {
-  background-image: url(/images/overonsheroimg.png);
+  background-image: url(../images/overonsheroimg.png);
   background-repeat: no-repeat;
   width: 100%;
   padding: 0 3rem 3rem 3rem;
@@ -158,16 +158,16 @@ html {
 
 /* hero bestemming background img */
 .bestemming-container {
-  background-image: url(/images/bestemmingenheroimg.png);
+  background-image: url(../images/bestemmingenheroimg.png);
   background-repeat: no-repeat;
   width: 100%;
   padding: 0 3rem 3rem 3rem;
   background-size: cover;
-}
+} 
 
 /* hero contact background img */
 .container-contact {
-  background-image: url(/images/contactimg.png);
+  background-image: url(../images/contactimg.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
